@@ -3,7 +3,7 @@ const Hapi = require('@hapi/hapi');
 
 (async () => {
  // create HTTP server
- const server = Hapi.server({ host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0', port: 3000 });
+ const server = Hapi.server({ host: '0.0.0.0', port: 3000 });
  server.route([
     {
       method: 'GET',
